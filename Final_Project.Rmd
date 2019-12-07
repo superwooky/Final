@@ -69,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-To decide whether we will accept the generated data comparing with the obeserved data, squared Euclidean distances are applied as a summary statistic. In other words, only if squared Euclidean distance between generated data and observed data is smaller than a tolerance $\epsilon$, we accepted those $q_c$ and $q_h$ as a sample from the posterior distribution. We repete this procedure 1,000 times to create 1,000 samples of the posteior distribtion with different values of the tollerance $\epsilon$s.
+To decide whether we will accept the generated data comparing with the obeserved data, squared Euclidean distances are applied as a summary statistic. In other words, only if squared Euclidean distance between the generated data and the observed data is smaller than a tolerance $\epsilon$, we accepted those $q_c$ and $q_h$ as a sample from the posterior distribution. We repeate this procedure 1,000 times to create 1,000 samples of the posteior distribtion with different values of the tollerance $\epsilon$.
 
 
 ```{r ABC step}
@@ -167,6 +167,6 @@ points(x = posterior_sample_BSE[2, ], y = posterior_sample_BSE[1, ], type = "p",
 par(mfrow=c(1,1))
 ```
 
-The above graphs stand for the marginal posteior distibutions of the prameters by ABC. The first graph is from Table 1 and the second one is from Table 2 of the figure 1. The first graph indicates that the two outbreaks of the same strain spread with approximately the same probabilities.(The marginal posterior distributions mostly overlap.) Our second graph shows that different strains spread with different probabilities. (The marginal posterior distributions are very different.)
+The graphs above stand for the marginal posteior distibutions of the prameters after ABC. The first graph is from Table 1 and the second one is from Table 2 of the figure 1. The first graph indicates that the two outbreaks of the same strain spread with approximately the same probabilities.(The marginal posterior distributions mostly overlap.) Our second graph shows that different strains spread with different probabilities. (The marginal posterior distributions are very different.)
 
 
