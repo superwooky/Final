@@ -69,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-To decide whether we will accept the generated data comparing with the obeserved data, squared Euclidean distances are applied as a summary statistic. In other words, only if squared Euclidean distance between the generated data and the observed data is smaller than a tolerance $\epsilon$, we accepted those $q_c$ and $q_h$ as a sample from the posterior distribution. We repeate this procedure 1,000 times to create 1,000 samples of the posteior distribtion with different values of the tollerance $\epsilon$.
+To decide whether we will accept the generated data comparing with the obeserved data, squared Euclidean distances are applied as a summary statistic. In other words, only if squared Euclidean distance between the generated data and the observed data is smaller than a tolerance $\epsilon$, we accepted those $q_c$ and $q_h$ as a sample from the posterior distribution. We repeat this procedure 1,000 times to create 1,000 samples of the posteior distribtion with different values of the tollerance $\epsilon$.
 
 
 ```{r ABC step}
