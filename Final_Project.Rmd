@@ -159,11 +159,11 @@ posterior_sample_ASE = generate_abc_smc_sample(data_ASE)
 posterior_sample_BSE = generate_abc_smc_sample(data_BSE)
 
 par(mfrow=c(1,2))
-plot(x =posterior_sample_A77[2, ], y = posterior_sample_A77[1, ], type = "p", col = "red", xlim = c(0,1), ylim = c(0,1), xlab = "q_h", ylab = "q_c")
+plot(x =posterior_sample_A77[2, ], y = posterior_sample_A77[1, ], type = "p", col = "red", xlim = c(0,1), ylim = c(0,1), xlab = "q_h", ylab = "q_c", main="Table 1")
 points(x = posterior_sample_A80[2, ], y = posterior_sample_A80[1, ], type = "p", col = "blue", xlim = c(0,1), ylim = c(0,1))
 
-plot(x = posterior_sample_ASE[2, ], y = posterior_sample_ASE[1, ], type = "p", col = "blue", xlim = c(0,1), ylim = c(0,1), xlab = "q_h", ylab = "q_c", main="Table 1")
-points(x = posterior_sample_BSE[2, ], y = posterior_sample_BSE[1, ], type = "p", col = "red", xlim = c(0,1), ylim = c(0,1), main="Table 2")
+plot(x = posterior_sample_ASE[2, ], y = posterior_sample_ASE[1, ], type = "p", col = "blue", xlim = c(0,1), ylim = c(0,1), xlab = "q_h", ylab = "q_c", main="Table 2")
+points(x = posterior_sample_BSE[2, ], y = posterior_sample_BSE[1, ], type = "p", col = "red", xlim = c(0,1), ylim = c(0,1))
 par(mfrow=c(1,1))
 ```
 
